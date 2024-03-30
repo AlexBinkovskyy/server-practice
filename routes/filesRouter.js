@@ -19,6 +19,6 @@ filesRouter.post(
 
 filesRouter.get("/", getFiles);
 
-filesRouter.get("/:filename", getFileInfo);
+filesRouter.get("/:dynamicFilename", checkExtension, getFileInfo);
 
 export default filesRouter;
